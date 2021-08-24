@@ -19,7 +19,7 @@ app.post('/pay', (req, res) => {
             "payment_method": "paypal"
         },
         "redirect_urls": {
-            "return_url": "http://localhost:3000/success",
+            "return_url": "https://sach99.herokuapp.com/",
             "cancel_url": "http://localhost:3000/cancel"
         },
         "transactions": [{
@@ -27,14 +27,14 @@ app.post('/pay', (req, res) => {
                 "items": [{
                     "name": "Red Sox Hat",
                     "sku": "001",
-                    "price": "5.00",
+                    "price": "25.00",
                     "currency": "USD",
                     "quantity": 1
                 }]
             },
             "amount": {
                 "currency": "USD",
-                "total": "5.00"
+                "total": "25.00"
             },
             "description": "Hat for the best team ever"
         }]
