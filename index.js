@@ -20,7 +20,7 @@ app.post('/pay', (req, res) => {
         },
         "redirect_urls": {
             "return_url": "https://sach99.herokuapp.com/",
-            "cancel_url": "http://localhost:3000/cancel"
+            "cancel_url": "https://paypalprojectnode.herokuapp.com/cancel"
         },
         "transactions": [{
             "item_list": {
